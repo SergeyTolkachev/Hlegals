@@ -1,0 +1,228 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-Regular.woff") format("woff"), url("../fonts/TTNorms-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-MediumItalic.woff") format("woff"), url("../fonts/TTNorms-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-Medium.woff") format("woff"), url("../fonts/TTNorms-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-Italic.woff") format("woff"), url("../fonts/TTNorms-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-BlackItalic.woff") format("woff"), url("../fonts/TTNorms-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+body {
+  font-family: "TT Norms", Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  margin: 50px 0;
+}
+.navbar .navbar-flex {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.navbar .navbar-logo-page {
+  display: flex;
+  align-items: flex-start;
+}
+.navbar .navbar-logo-page span {
+  font-size: 38px;
+}
+.navbar-line {
+  width: calc(100% - 8px);
+  margin-top: -60px;
+  text-align: right;
+  color: #B3B3BA;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar-line-lang, .navbar-line-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.navbar-line-lang li {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 8px;
+}
+.navbar-line-lang li.active {
+  background-color: #F0145A;
+}
+.navbar-line-list li {
+  margin-left: 10px;
+}
+.navbar-line-list li a {
+  color: #B3B3BA;
+  text-decoration: none;
+}
+.navbar-collapse {
+  flex-basis: initial;
+  width: calc(100% - 200px);
+  flex-grow: 0;
+  margin-left: auto;
+  margin-top: -43px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #24A3FF;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.navbar-home {
+  width: 100%;
+}
+
+.team-section-text {
+  margin-top: 100px;
+  margin-left: 130px;
+  margin-right: 130px;
+  font-size: 42px;
+  font-weight: 700;
+  background-color: #F0145A;
+  background-image: linear-gradient(45deg, #f0145A, #EF8080);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  .team-section-text {
+    font-size: 32px;
+  }
+}
+
+.team-section-members {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .team-section-members {
+    gap: 5px;
+    flex-direction: column;
+  }
+}
+.team-section-members-item {
+  margin-top: 10px;
+  width: calc(100%/3 - 20px);
+}
+@media (max-width: 576px) {
+  .team-section-members-item {
+    width: 100%;
+    display: flex;
+  }
+}
+@media (max-width: 576px) {
+  .team-section-members-item .team-section-members-item-photo {
+    width: 158px;
+    height: 191px;
+  }
+}
+.team-section-members-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .team-section-members-item-info {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+.team-section-members-item-info-name {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: #323264;
+  font-size: 18px;
+}
+.team-section-members-item-info-role {
+  color: #B3B3BA;
+}/*# sourceMappingURL=team_style.css.map */
